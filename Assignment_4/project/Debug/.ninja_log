@@ -1,0 +1,13 @@
+# ninja log v5
+46	177	7058319152960985	C:/Users/THANG/Desktop/project_IAR/Assignment_4/project/Debug/Obj/startup/startup_MKE16Z4.o	1f1cf9903c53e455
+7	135	7058319733955357	C:/Users/THANG/Desktop/project_IAR/Assignment_4/project/Debug/Obj/source/APP/Application.o	f279c0dda0cb51e8
+1	138	7058319733985393	C:/Users/THANG/Desktop/project_IAR/Assignment_4/project/Debug/Obj/source/DRIVER/DRIVER_LED/Driver_Led.o	2d841d5f5a3d271b
+11	151	7058319734025352	C:/Users/THANG/Desktop/project_IAR/Assignment_4/project/Debug/Obj/source/DRIVER/DRIVER_LPIT/Driver_LPIT.o	e1a7b3ad4f9e559c
+19	155	7058319734155769	C:/Users/THANG/Desktop/project_IAR/Assignment_4/project/Debug/Obj/source/HAL/HAL_PORT/HAL_PORT.o	eb12db1e223a2d4d
+33	169	7058319734355808	C:/Users/THANG/Desktop/project_IAR/Assignment_4/project/Debug/Obj/startup/system_MKE16Z4.o	70532e5df20e5e17
+15	171	7058319734295815	C:/Users/THANG/Desktop/project_IAR/Assignment_4/project/Debug/Obj/source/HAL/HAL_GPIO/HAL_GPIO.o	fda7f1ee3ef2c49e
+29	184	7058319734425822	C:/Users/THANG/Desktop/project_IAR/Assignment_4/project/Debug/Obj/source/HAL/HAL_CLOCK/HAL_CLOCK.o	4631c0310fee1be1
+24	187	7058319734485843	C:/Users/THANG/Desktop/project_IAR/Assignment_4/project/Debug/Obj/source/HAL/HAL_LPIT/HAL_LPIT.o	48b4212ed7f18a03
+189	300	7058319735711318	C:/Users/THANG/Desktop/project_IAR/Assignment_4/project/Debug/Exe/ass4.out	1b442bcff0a5a1
+3	407	7058446836703485	C:/Users/THANG/Desktop/project_IAR/Assignment_4/project/Debug/Obj/source/HAL/HAL_LPIT/HAL_LPIT.o	48b4212ed7f18a03
+408	522	7058446837905935	C:/Users/THANG/Desktop/project_IAR/Assignment_4/project/Debug/Exe/ass4.out	1b442bcff0a5a1

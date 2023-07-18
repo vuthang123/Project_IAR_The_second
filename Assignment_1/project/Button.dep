@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>5</fileVersion>
+    <fileChecksum>2997631145</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\CMSIS\Include\cmsis_version.h</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$PROJ_DIR$\..\CMSIS\Include\core_cm0plus.h</file>
+            <file>$TOOLKIT_DIR$\config\linker\NXP\MKE16Z64xxx4.icf</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\Startup\startup_MKE16Z4.o</file>
+            <file>$PROJ_DIR$\..\CMSIS\Include\cmsis_compiler.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\Debug\List\Button.map</file>
+            <file>$PROJ_DIR$\..\MKE16Z4\fsl_device_registers.h</file>
+            <file>$TOOLKIT_DIR$\lib\m6M_tl.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\aarch32\iccarm_builtin.h</file>
+            <file>$TOOLKIT_DIR$\lib\dl6M_tln.a</file>
+            <file>$PROJ_DIR$\..\source\Button.c</file>
+            <file>$PROJ_DIR$\..\source\Driver.h</file>
+            <file>$PROJ_DIR$\..\MKE16Z4\system_MKE16Z4.c</file>
+            <file>$PROJ_DIR$\..\MKE16Z4\startup_MKE16Z4.s</file>
+            <file>$PROJ_DIR$\..\MKE16Z4\system_MKE16Z4.h</file>
+            <file>$PROJ_DIR$\..\source\Driver.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\Startup\system_MKE16Z4.o</file>
+            <file>$PROJ_DIR$\..\CMSIS\Include\cmsis_iccarm.h</file>
+            <file>$PROJ_DIR$\..\MKE16Z4\MKE16Z4.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\Source\Button.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\lib\rt6M_tl.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\Button.out</file>
+            <file>$PROJ_DIR$\Debug\Obj\Source\Driver\Driver.o</file>
+            <file>$PROJ_DIR$\Debug\Exe\Button.srec</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\..\MKE16Z4\MKE16Z4_features.h</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 8 26</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\source\Button.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 22</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 14 25 23 29 7 4 30 21 2 0 6 20 11 17</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\MKE16Z4\system_MKE16Z4.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 19</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 25 23 29 7 4 30 9 21 2 0 6 20 11 17 31</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\MKE16Z4\startup_MKE16Z4.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 5</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\source\Driver.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 27</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 14 25 23 29 7 4 30</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\Button.out</name>
+            <outputs>
+                <tool>
+                    <name>OBJCOPY</name>
+                    <file> 28</file>
+                </tool>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 8</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 3 22 27 5 19 1 24 10 12</file>
+                </tool>
+            </inputs>
+        </file>
+        <forcedrebuild>
+            <name>[REBUILD_ALL]</name>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>

@@ -1,0 +1,409 @@
+###############################################################################
+#
+# IAR ELF Linker V9.32.2.340/W64 for ARM                  19/May/2023  23:00:50
+# Copyright 2007-2023 IAR Systems AB.
+#
+#    Output file  =
+#        C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\Exe\uart.out
+#    Map file     =
+#        C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\List\uart.map
+#    Command line =
+#        -f
+#        C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\Exe\uart.out.rsp
+#        (C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\Obj\source\APP\Application.o
+#        C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\Obj\source\DRIVER\DRIVER_UART\Driver_UART.o
+#        C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\Obj\source\HAL\HAL_CLOCK\HAL_CLOCK.o
+#        C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\Obj\source\HAL\HAL_GPIO\HAL_GPIO.o
+#        C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\Obj\source\HAL\HAL_PORT\HAL_PORT.o
+#        C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\Obj\source\HAL\HAL_UART\HAL_UART.o
+#        C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\Obj\source\MIDDLEWARE\MIDDLE_QUEUE\Middleware_QUEUE.o
+#        C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\Obj\source\MIDDLEWARE\MIDDLE_SREC\Middleware_SREC.o
+#        C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\Obj\startup\startup_MKE16Z4.o
+#        C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\Obj\startup\system_MKE16Z4.o
+#        --no_out_extension -o
+#        C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\Exe\uart.out
+#        --map
+#        C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\List\uart.map
+#        --config "C:\Program Files\IAR Systems\Embedded Workbench
+#        9.1\arm/config/linker/NXP/MKE16Z64xxx4.icf" --semihosting --entry
+#        __iar_program_start --vfe --text_out locale --cpu=Cortex-M0+
+#        --fpu=None)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__CPP_Runtime   = 1
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because --advanced_heap
+was not specified and the application did not appear to
+be primarily optimized for speed.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x0 { ro section .intvec };
+"P1":  place in [from 0x0 to 0x3ff] |
+                [from 0x410 to 0xffff] { ro };
+define block CSTACK with size = 512, alignment = 8 { };
+define block PROC_STACK with size = 0, alignment = 8 { };
+define block HEAP with size = 2K, alignment = 8 { };
+"P2":  place in [from 0x1fff'f800 to 0x1fff'ffff] |
+                [from 0x2000'0000 to 0x2000'17ff] {
+          rw, block CSTACK, block PROC_STACK, block HEAP };
+"P3":  place in [from 0x400 to 0x40f] { section FlashConfig };
+initialize by copy { rw };
+
+  Section            Kind         Address   Size  Object
+  -------            ----         -------   ----  ------
+"A0":                                       0xc0
+  .intvec            ro code          0x0   0xc0  startup_MKE16Z4.o [9]
+                                   - 0xc0   0xc0
+
+"P1", part 1 of 2:                         0x110
+  .text              ro code         0xc0  0x104  Middleware_QUEUE.o [7]
+  Initializer bytes  const          0x1c4    0xc  <for P2 s0>
+                                  - 0x1d0  0x110
+
+"P3":                                       0x10
+  FlashConfig        ro code        0x400   0x10  startup_MKE16Z4.o [9]
+                                  - 0x410   0x10
+
+"P1", part 2 of 2:                         0xb6e
+  .text              ro code        0x410  0x360  HAL_CLOCK.o [3]
+  .text              ro code        0x770  0x1f4  Middleware_SREC.o [8]
+  .text              ro code        0x964  0x180  HAL_UART.o [6]
+  .text              ro code        0xae4   0xfc  Driver_UART.o [2]
+  .text              ro code        0xbe0   0x64  HAL_PORT.o [5]
+  .text              ro code        0xc44   0xf0  Application.o [1]
+  .text              ro code        0xd34   0x14  memset.o [11]
+  .text              ro code        0xd48   0x4e  ABImemset.o [11]
+  .text              ro code        0xd96    0x2  startup_MKE16Z4.o [9]
+  .text              ro code        0xd98   0x50  system_MKE16Z4.o [9]
+  .text              ro code        0xde8    0x2  system_MKE16Z4.o [9]
+  .text              ro code        0xdea   0x3c  zero_init3.o [11]
+  .text              ro code        0xe26   0x30  copy_init3.o [11]
+  .text              ro code        0xe56    0x2  startup_MKE16Z4.o [9]
+  .text              ro code        0xe58   0x28  startup_MKE16Z4.o [9]
+  .text              ro code        0xe80   0x28  data_init.o [11]
+  .iar.init_table    const          0xea8   0x24  - Linker created -
+  .text              ro code        0xecc   0x1e  cmain.o [11]
+  .text              ro code        0xeea    0x4  low_level_init.o [10]
+  .text              ro code        0xeee    0x8  exit.o [10]
+  .text              ro code        0xef6    0x2  startup_MKE16Z4.o [9]
+  .text              ro code        0xef8    0xa  cexit.o [11]
+  .text              ro code        0xf02    0x2  startup_MKE16Z4.o [9]
+  .text              ro code        0xf04   0x14  exit.o [12]
+  .text              ro code        0xf18   0x1c  cstartup_M.o [11]
+  .rodata            const          0xf34    0x8  Application.o [1]
+  .rodata            const          0xf3c    0x8  Application.o [1]
+  .text              ro code        0xf44    0x8  startup_MKE16Z4.o [9]
+  .text              ro code        0xf4c    0x8  startup_MKE16Z4.o [9]
+  .text              ro code        0xf54    0x8  startup_MKE16Z4.o [9]
+  .text              ro code        0xf5c    0x8  startup_MKE16Z4.o [9]
+  .text              ro code        0xf64    0x8  startup_MKE16Z4.o [9]
+  .text              ro code        0xf6c    0x8  startup_MKE16Z4.o [9]
+  .text              ro code        0xf74    0x8  startup_MKE16Z4.o [9]
+  .text              ro code        0xf7c    0x2  startup_MKE16Z4.o [9]
+  .rodata            const          0xf7e    0x0  zero_init3.o [11]
+  .rodata            const          0xf7e    0x0  copy_init3.o [11]
+                                  - 0xf7e  0xb6e
+
+"P2", part 1 of 3:                           0xc
+  P2 s0                       0x1fff'f800    0xc  <Init block>
+    .data            inited   0x1fff'f800    0xc  Driver_UART.o [2]
+                            - 0x1fff'f80c    0xc
+
+"P2", part 2 of 3:                         0x410
+  .bss               zero     0x1fff'f80c  0x400  Middleware_QUEUE.o [7]
+  .bss               zero     0x1fff'fc0c    0x4  Driver_UART.o [2]
+  .bss               zero     0x1fff'fc10    0x4  HAL_UART.o [6]
+  .bss               zero     0x1fff'fc14    0x4  Middleware_SREC.o [8]
+  .bss               zero     0x1fff'fc18    0x1  Middleware_QUEUE.o [7]
+                            - 0x1fff'fc19  0x40d
+
+"P2", part 3 of 3:                         0x200
+  CSTACK                      0x1fff'fc20  0x200  <Block>
+    CSTACK           uninit   0x1fff'fc20  0x200  <Block tail>
+                            - 0x1fff'fe20  0x200
+
+Unused ranges:
+
+         From           To    Size
+         ----           --    ----
+        0x1d0        0x3ff   0x230
+        0xf7e       0xffff  0xf082
+  0x1fff'fc1c  0x1fff'fc1f     0x4
+  0x1fff'fe20  0x1fff'ffff   0x1e0
+  0x2000'0000  0x2000'17ff  0x1800
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x40d:
+          0x1fff'f80c  0x40d
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0xc:
+                0x1c4    0xc
+    1 destination range, total size 0xc:
+          0x1fff'f800    0xc
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module              ro code  ro data  rw data
+    ------              -------  -------  -------
+command line/config:
+    ---------------------------------------------
+    Total:
+
+C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\Obj\source\APP: [1]
+    Application.o           240       16
+    ---------------------------------------------
+    Total:                  240       16
+
+C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\Obj\source\DRIVER\DRIVER_UART: [2]
+    Driver_UART.o           252       12       16
+    ---------------------------------------------
+    Total:                  252       12       16
+
+C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\Obj\source\HAL\HAL_CLOCK: [3]
+    HAL_CLOCK.o             864
+    ---------------------------------------------
+    Total:                  864
+
+C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\Obj\source\HAL\HAL_GPIO: [4]
+    ---------------------------------------------
+    Total:
+
+C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\Obj\source\HAL\HAL_PORT: [5]
+    HAL_PORT.o              100
+    ---------------------------------------------
+    Total:                  100
+
+C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\Obj\source\HAL\HAL_UART: [6]
+    HAL_UART.o              384                 4
+    ---------------------------------------------
+    Total:                  384                 4
+
+C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\Obj\source\MIDDLEWARE\MIDDLE_QUEUE: [7]
+    Middleware_QUEUE.o      260             1'025
+    ---------------------------------------------
+    Total:                  260             1'025
+
+C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\Obj\source\MIDDLEWARE\MIDDLE_SREC: [8]
+    Middleware_SREC.o       500                 4
+    ---------------------------------------------
+    Total:                  500                 4
+
+C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\Obj\startup: [9]
+    startup_MKE16Z4.o       314
+    system_MKE16Z4.o         82
+    ---------------------------------------------
+    Total:                  396
+
+dl6M_tln.a: [10]
+    exit.o                    8
+    low_level_init.o          4
+    ---------------------------------------------
+    Total:                   12
+
+rt6M_tl.a: [11]
+    ABImemset.o              78
+    cexit.o                  10
+    cmain.o                  30
+    copy_init3.o             48
+    cstartup_M.o             28
+    data_init.o              40
+    memset.o                 20
+    zero_init3.o             60
+    ---------------------------------------------
+    Total:                  314
+
+shb_l.a: [12]
+    exit.o                   20
+    ---------------------------------------------
+    Total:                   20
+
+    Linker created                    36      512
+-------------------------------------------------
+    Grand Total:          3'342       64    1'561
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base         0xea8          --   Gb  - Linker created -
+.iar.init_table$$Limit        0xecc          --   Gb  - Linker created -
+?main                         0xecd         Code  Gb  cmain.o [11]
+ADC0_IRQHandler               0xf75         Code  Wk  startup_MKE16Z4.o [9]
+Application_Init              0xc45    0xc  Code  Gb  Application.o [1]
+Application_handle_receiver_data_intterupt
+                              0xd1d   0x18  Code  Lc  Application.o [1]
+CMP0_IRQHandler               0xf75         Code  Wk  startup_MKE16Z4.o [9]
+CSTACK$$Base            0x1fff'fc20          --   Gb  - Linker created -
+CSTACK$$Limit           0x1fff'fe20          --   Gb  - Linker created -
+Characters_to_Hex             0x771   0x32  Code  Lc  Middleware_SREC.o [8]
+Check_length_str              0x94d   0x18  Code  Gb  Middleware_SREC.o [8]
+DefaultISR                    0xf75         Code  Wk  startup_MKE16Z4.o [9]
+Driver_LPUART0_Transmission_Milt_byte
+                              0xb61   0x26  Code  Gb  Driver_UART.o [2]
+Driver_LPUART0_Transmission_One_byte
+                              0xb4f   0x12  Code  Gb  Driver_UART.o [2]
+Driver_UART_Init              0xae5   0x5e  Code  Gb  Driver_UART.o [2]
+Driver_Uart_Call_back   0x1fff'fc0c    0x4  Data  Lc  Driver_UART.o [2]
+Driver_Uart_Hander_Data
+                              0xbb3    0x6  Code  Gb  Driver_UART.o [2]
+Driver_Uart_Port_Enbale_Clock
+                              0xb87   0x2c  Code  Lc  Driver_UART.o [2]
+Driver_Uart_Rx                0xb43    0xc  Code  Gb  Driver_UART.o [2]
+FTFA_IRQHandler               0xf75         Code  Wk  startup_MKE16Z4.o [9]
+FTM0_IRQHandler               0xf75         Code  Wk  startup_MKE16Z4.o [9]
+FTM1_IRQHandler               0xf75         Code  Wk  startup_MKE16Z4.o [9]
+HALCLOCK_Enableclock_peripheral
+                              0x411  0x30e  Code  Gb  HAL_CLOCK.o [3]
+HALCLOCK_FastIRC_FIRC         0x71f   0x46  Code  Gb  HAL_CLOCK.o [3]
+HALLPUART_Data_bit            0x9bd   0x70  Code  Gb  HAL_UART.o [6]
+HALLPUART_Disable_Tx_Rx
+                              0x995   0x12  Code  Gb  HAL_UART.o [6]
+HALLPUART_Ennable_Tx_Rx
+                              0x9a7   0x16  Code  Gb  HAL_UART.o [6]
+HALLPUART_ParityType          0xa2d   0x28  Code  Gb  HAL_UART.o [6]
+HALUART_Enable_Rx_IT          0xa5f   0x1a  Code  Gb  HAL_UART.o [6]
+HALUART_Not_Inversion         0xa83   0x10  Code  Gb  HAL_UART.o [6]
+HALUART_Sortbyte              0xa79    0xa  Code  Gb  HAL_UART.o [6]
+HALUART_Stopbit               0xa55    0xa  Code  Gb  HAL_UART.o [6]
+HAL_PORT_Select_Mode          0xbe1   0x4c  Code  Gb  HAL_PORT.o [5]
+HAL_UART_Callback             0xab3    0x6  Code  Gb  HAL_UART.o [6]
+HAL_UART_sfun_pointer   0x1fff'fc10    0x4  Data  Lc  HAL_UART.o [6]
+HardFault_Handler             0xe57         Code  Wk  startup_MKE16Z4.o [9]
+LPI2C0_DriverIRQHandler
+                              0xf75         Code  Wk  startup_MKE16Z4.o [9]
+LPI2C0_IRQHandler             0xf45         Code  Wk  startup_MKE16Z4.o [9]
+LPIT0_IRQHandler              0xf75         Code  Wk  startup_MKE16Z4.o [9]
+LPSPI0_DriverIRQHandler
+                              0xf75         Code  Wk  startup_MKE16Z4.o [9]
+LPSPI0_IRQHandler             0xf4d         Code  Wk  startup_MKE16Z4.o [9]
+LPUART0_DriverIRQHandler
+                              0xf75         Code  Wk  startup_MKE16Z4.o [9]
+LPUART0_IRQHandler            0xa93   0x20  Code  Gb  HAL_UART.o [6]
+LPUART1_DriverIRQHandler
+                              0xf75         Code  Wk  startup_MKE16Z4.o [9]
+LPUART1_IRQHandler            0xf55         Code  Wk  startup_MKE16Z4.o [9]
+LPUART2_DriverIRQHandler
+                              0xf75         Code  Wk  startup_MKE16Z4.o [9]
+LPUART2_IRQHandler            0xf5d         Code  Wk  startup_MKE16Z4.o [9]
+LVD_LVW_IRQHandler            0xf75         Code  Wk  startup_MKE16Z4.o [9]
+MSCAN_DriverIRQHandler        0xf75         Code  Wk  startup_MKE16Z4.o [9]
+MSCAN_ORed_IRQHandler         0xf6d         Code  Wk  startup_MKE16Z4.o [9]
+MSCAN_Rx_IRQHandler           0xf65         Code  Wk  startup_MKE16Z4.o [9]
+Middleware_QueueInit           0xc1   0x14  Code  Gb  Middleware_QUEUE.o [7]
+Middleware_Queue_Dequeue
+                              0x18b   0x28  Code  Gb  Middleware_QUEUE.o [7]
+Middleware_Queue_Empty         0xd5   0x2e  Code  Gb  Middleware_QUEUE.o [7]
+Middleware_Queue_Enqueue
+                              0x14f   0x2c  Code  Gb  Middleware_QUEUE.o [7]
+Middleware_Queue_Full         0x103   0x2e  Code  Gb  Middleware_QUEUE.o [7]
+Middleware_Queue_Popdata
+                              0x17b   0x10  Code  Gb  Middleware_QUEUE.o [7]
+Middleware_Queue_PushData
+                              0x131   0x1e  Code  Gb  Middleware_QUEUE.o [7]
+Middleware_SREC_Parse         0x7a3  0x1a4  Code  Gb  Middleware_SREC.o [8]
+NMI_Handler                   0xd97         Code  Wk  startup_MKE16Z4.o [9]
+PDB0_IRQHandler               0xf75         Code  Wk  startup_MKE16Z4.o [9]
+PORTAE_IRQHandler             0xf75         Code  Wk  startup_MKE16Z4.o [9]
+PORTBCD_IRQHandler            0xf75         Code  Wk  startup_MKE16Z4.o [9]
+PWT_LPTMR0_IRQHandler         0xf75         Code  Wk  startup_MKE16Z4.o [9]
+PendSV_Handler                0xf03         Code  Wk  startup_MKE16Z4.o [9]
+RTC_IRQHandler                0xf75         Code  Wk  startup_MKE16Z4.o [9]
+Region$$Table$$Base           0xea8          --   Gb  - Linker created -
+Region$$Table$$Limit          0xecc          --   Gb  - Linker created -
+Reserved16_IRQHandler         0xf75         Code  Wk  startup_MKE16Z4.o [9]
+Reserved17_IRQHandler         0xf75         Code  Wk  startup_MKE16Z4.o [9]
+Reserved18_IRQHandler         0xf75         Code  Wk  startup_MKE16Z4.o [9]
+Reserved19_IRQHandler         0xf75         Code  Wk  startup_MKE16Z4.o [9]
+Reserved20_IRQHandler         0xf75         Code  Wk  startup_MKE16Z4.o [9]
+Reserved25_IRQHandler         0xf75         Code  Wk  startup_MKE16Z4.o [9]
+Reserved27_IRQHandler         0xf75         Code  Wk  startup_MKE16Z4.o [9]
+Reserved35_IRQHandler         0xf75         Code  Wk  startup_MKE16Z4.o [9]
+Reserved37_IRQHandler         0xf75         Code  Wk  startup_MKE16Z4.o [9]
+Reserved39_IRQHandler         0xf75         Code  Wk  startup_MKE16Z4.o [9]
+Reset_Handler                 0xe59         Code  Wk  startup_MKE16Z4.o [9]
+SCG_RCM_IRQHandler            0xf75         Code  Wk  startup_MKE16Z4.o [9]
+SVC_Handler                   0xef7         Code  Wk  startup_MKE16Z4.o [9]
+SysTick_Handler               0xf7d         Code  Wk  startup_MKE16Z4.o [9]
+SystemInit                    0xd99   0x34  Code  Gb  system_MKE16Z4.o [9]
+SystemInitHook                0xde9    0x2  Code  Wk  system_MKE16Z4.o [9]
+TSI_IRQHandler                0xf75         Code  Wk  startup_MKE16Z4.o [9]
+WDOG_EWM_IRQHandler           0xf75         Code  Wk  startup_MKE16Z4.o [9]
+__NVIC_ClearPendingIRQ        0x97d   0x18  Code  Lc  HAL_UART.o [6]
+__NVIC_EnableIRQ              0x965   0x18  Code  Lc  HAL_UART.o [6]
+__Vectors                       0x0          --   Gb  startup_MKE16Z4.o [9]
+__Vectors_End                  0xc0         Data  Gb  startup_MKE16Z4.o [9]
+__Vectors_Size {Abs}           0xc0          --   Gb  startup_MKE16Z4.o [9]
+__aeabi_memset                0xd49         Code  Gb  ABImemset.o [11]
+__cmain                       0xecd         Code  Gb  cmain.o [11]
+__exit                        0xf05   0x14  Code  Gb  exit.o [12]
+__iar_Memset4_word            0xd69         Code  Gb  ABImemset.o [11]
+__iar_Memset_word             0xd55         Code  Gb  ABImemset.o [11]
+__iar_copy_init3              0xe27   0x30  Code  Gb  copy_init3.o [11]
+__iar_data_init3              0xe81   0x28  Code  Gb  data_init.o [11]
+__iar_program_start           0xf19         Code  Gb  cstartup_M.o [11]
+__iar_zero_init3              0xdeb   0x3c  Code  Gb  zero_init3.o [11]
+__low_level_init              0xeeb    0x4  Code  Gb  low_level_init.o [10]
+__vector_table                  0x0         Data  Gb  startup_MKE16Z4.o [9]
+__vector_table_0x1c            0x1c         Data  Gb  startup_MKE16Z4.o [9]
+_call_main                    0xed9         Code  Gb  cmain.o [11]
+_exit                         0xef9         Code  Gb  cexit.o [11]
+exit                          0xeef    0x8  Code  Gb  exit.o [10]
+index                   0x1fff'fc18    0x1  Data  Lc  Middleware_QUEUE.o [7]
+main                          0xc51   0xc0  Code  Gb  Application.o [1]
+memset                        0xd35   0x14  Code  Gb  memset.o [11]
+q                       0x1fff'f80c  0x400  Data  Lc  Middleware_QUEUE.o [7]
+u8Counter_Error_String  0x1fff'fc14    0x4  Data  Lc  Middleware_SREC.o [8]
+uart                    0x1fff'f800    0xc  Data  Lc  Driver_UART.o [2]
+
+
+[1] = C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\Obj\source\APP
+[2] = C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\Obj\source\DRIVER\DRIVER_UART
+[3] = C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\Obj\source\HAL\HAL_CLOCK
+[4] = C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\Obj\source\HAL\HAL_GPIO
+[5] = C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\Obj\source\HAL\HAL_PORT
+[6] = C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\Obj\source\HAL\HAL_UART
+[7] = C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\Obj\source\MIDDLEWARE\MIDDLE_QUEUE
+[8] = C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\Obj\source\MIDDLEWARE\MIDDLE_SREC
+[9] = C:\Users\THANG\Desktop\project_IAR\Assignment_5\project\Debug\Obj\startup
+[10] = dl6M_tln.a
+[11] = rt6M_tl.a
+[12] = shb_l.a
+
+  3'342 bytes of readonly  code memory
+     64 bytes of readonly  data memory
+  1'561 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

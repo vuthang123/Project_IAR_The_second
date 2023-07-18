@@ -1,0 +1,21 @@
+# ninja log v5
+13	27	7060118279778861	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/Obj/Startup/startup_MKE16Z4.o	fdc8ffb135d95ba0
+3	98	7060118280409760	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/Obj/Source/Button.o	37944da0d2e9c2fd
+16	116	7060118280591091	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/Obj/Startup/system_MKE16Z4.o	82262bb62f66613e
+152	161	7060118281117871	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/Exe/Button.srec	e4267d0678acae2f
+9	71	7060118280175971	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/Obj/Source/Driver/Driver.o	97cc965d03c9f974
+118	150	7060118280967793	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/Exe/Button.out	a16f6d6e11e6a3b6
+2	143	7037732487214245	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/Obj/Source/Driver.o	3ba42b09ea2b6554
+12	27	7060118858293280	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/Obj/Startup/startup_MKE16Z4.o	fdc8ffb135d95ba0
+7	84	7060118858811404	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/Obj/Source/Driver/Driver.o	97cc965d03c9f974
+2	114	7060118859066558	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/Obj/Source/Button.o	37944da0d2e9c2fd
+16	129	7060118859253423	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/Obj/Startup/system_MKE16Z4.o	82262bb62f66613e
+132	166	7060118859639466	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/Exe/Button.out	a16f6d6e11e6a3b6
+167	176	7060118859792214	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/Exe/Button.srec	e4267d0678acae2f
+3	76	7061760049683343	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/Exe/Button.srec	85c0b20051da78f9
+17	152	7061760082777892	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/Obj/Startup/startup_MKE16Z4.o	fdc8ffb135d95ba0
+3	182	7061760082989435	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/Obj/Source/Driver/Driver.o	97cc965d03c9f974
+11	253	7061760083665596	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/Obj/Source/Button.o	37944da0d2e9c2fd
+118	299	7061760084141573	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/Obj/Startup/system_MKE16Z4.o	82262bb62f66613e
+302	512	7061760086291274	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/Exe/Button.out	a16f6d6e11e6a3b6
+516	534	7061760086605203	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/Exe/Button.srec	85c0b20051da78f9

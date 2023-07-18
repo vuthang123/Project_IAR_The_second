@@ -1,0 +1,26 @@
+# ninja log v5
+7	81	7037602810000000	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/BrowseInfo/Source/Button.xcl	c32c2723f70a96bc
+1	86	7037732530000000	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/BrowseInfo/Source/Driver/Driver.xcl	caeeefb22cc455ec
+1	77	7037602810000000	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/BrowseInfo/Startup/system_MKE16Z4.xcl	aad569339e8bc922
+1	102	7043062791706840	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/BrowseInfo/Source/Button.pbi	586582ef576fbbc7
+77	160	7037602819042770	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/BrowseInfo/Startup/system_MKE16Z4.pbi	9b2b69f3ed41392
+103	158	7043062792274840	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/BrowseInfo/Button.pbd	5ab2fad54461f3
+159	733	7043062797820308	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/BrowseInfo/Button.pbw	daeb8539fd89b65c
+1	145	7040528467065516	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/BrowseInfo/Source/Driver/Driver.pbi	fa065ce3115fbc91
+1	73	7037615920000000	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/BrowseInfo/Source/Driver.xcl	caafcde068fbb1ce
+1	51	7037622058400670	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/BrowseInfo/Source/Driver.pbi	65f5f925c5d3be57
+1	85	7043062849421655	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/BrowseInfo/Source/Button.pbi	586582ef576fbbc7
+87	138	7043062849956421	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/BrowseInfo/Button.pbd	5ab2fad54461f3
+139	701	7043062855345702	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/BrowseInfo/Button.pbw	daeb8539fd89b65c
+1	82	7043065926747365	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/BrowseInfo/Source/Button.pbi	586582ef576fbbc7
+84	132	7043065927248799	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/BrowseInfo/Button.pbd	5ab2fad54461f3
+133	664	7043065932346027	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/BrowseInfo/Button.pbw	daeb8539fd89b65c
+0	120	7043070061133467	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/BrowseInfo/Source/Button.pbi	586582ef576fbbc7
+121	191	7043070061864436	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/BrowseInfo/Button.pbd	5ab2fad54461f3
+193	833	7043070068003097	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/BrowseInfo/Button.pbw	daeb8539fd89b65c
+0	89	7043071277426652	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/BrowseInfo/Source/Button.pbi	586582ef576fbbc7
+91	139	7043071277939785	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/BrowseInfo/Button.pbd	5ab2fad54461f3
+141	679	7043071283113672	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/BrowseInfo/Button.pbw	daeb8539fd89b65c
+2	112	7043509337875616	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/BrowseInfo/Source/Button.pbi	586582ef576fbbc7
+113	183	7043509338587148	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/BrowseInfo/Button.pbd	5ab2fad54461f3
+185	869	7043509345241854	C:/Users/THANG/Desktop/project_IAR/Assignment_1/project/Debug/BrowseInfo/Button.pbw	daeb8539fd89b65c

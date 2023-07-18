@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>5</fileVersion>
+    <fileChecksum>1517215209</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\Debug\Obj\source\HAL\HAL_PORT\HAL_PORT.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\source\DRIVER\DRIVER_LPIT\Driver_LPIT.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup\startup_MKE16Z4.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$PROJ_DIR$\..\CMSIS\Include\cmsis_iccarm.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\ass4.out</file>
+            <file>$PROJ_DIR$\Debug\Obj\source\APP\Application.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$TOOLKIT_DIR$\config\linker\NXP\MKE16Z64xxx4.icf</file>
+            <file>$PROJ_DIR$\Debug\Obj\source\HAL\HAL_LPIT\HAL_LPIT.o</file>
+            <file>$PROJ_DIR$\..\MKE16Z4\MKE16Z4.h</file>
+            <file>$PROJ_DIR$\..\MKE16Z4\MKE16Z4_features.h</file>
+            <file>$PROJ_DIR$\..\MKE16Z4\fsl_device_registers.h</file>
+            <file>$PROJ_DIR$\..\CMSIS\Include\core_cm0plus.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\source\DRIVER\DRIVER_LED\Driver_Led.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\source\HAL\HAL_CLOCK\HAL_CLOCK.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\lib\rt6M_tl.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\source\HAL\HAL_GPIO\HAL_GPIO.o</file>
+            <file>$TOOLKIT_DIR$\lib\m6M_tl.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup\system_MKE16Z4.o</file>
+            <file>$PROJ_DIR$\..\MKE16Z4\system_MKE16Z4.c</file>
+            <file>$PROJ_DIR$\Debug\List\ass4.map</file>
+            <file>$PROJ_DIR$\..\MKE16Z4\system_MKE16Z4.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\aarch32\iccarm_builtin.h</file>
+            <file>$PROJ_DIR$\..\CMSIS\Include\cmsis_compiler.h</file>
+            <file>$PROJ_DIR$\..\CMSIS\Include\cmsis_version.h</file>
+            <file>$PROJ_DIR$\..\source\HAL\HAL_LPIT\HAL_LPIT.c</file>
+            <file>$PROJ_DIR$\..\source\HAL\HAL_PORT\HAL_PORT.h</file>
+            <file>$PROJ_DIR$\..\source\Driver\Driver_Led\Driver_Led.h</file>
+            <file>$PROJ_DIR$\..\source\Driver\Driver_lpit\Driver_LPIT.c</file>
+            <file>$PROJ_DIR$\..\source\HAL\HAL_GPIO\HAL_GPIO.h</file>
+            <file>$PROJ_DIR$\..\source\Driver\Driver_Led\Driver_Led.c</file>
+            <file>$PROJ_DIR$\..\source\HAL\HAL_GPIO\HAL_GPIO.c</file>
+            <file>$PROJ_DIR$\..\source\HAL\HAL_LPIT\HAL_LPIT.h</file>
+            <file>$PROJ_DIR$\..\source\HAL\HAL_CLOCK\HAL_CLOCK.h</file>
+            <file>$PROJ_DIR$\..\source\HAL\HAL_CLOCK\HAL_CLOCK.c</file>
+            <file>$PROJ_DIR$\..\source\HAL\HAL_PORT\HAL_PORT.c</file>
+            <file>$PROJ_DIR$\..\source\Driver\Driver_lpit\Driver_LPIT.h</file>
+            <file>$PROJ_DIR$\..\source\App\Application.c</file>
+            <file>$TOOLKIT_DIR$\lib\dl6M_tln.a</file>
+            <file>$PROJ_DIR$\..\MKE16Z4\startup_MKE16Z4.s</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 25 6</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\ass4.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 25</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 10 7 16 1 17 20 11 0 2 23 4 19 21 44</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\MKE16Z4\system_MKE16Z4.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 23</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 22 8 3 18 9 27 14 12 15 30 29 5 28 26 13</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\source\HAL\HAL_LPIT\HAL_LPIT.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 11</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 38 12 15 22 8 3 18 9 27 30 29 5 28 26</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\source\Driver\Driver_lpit\Driver_LPIT.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 1</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 42 12 15 22 8 3 18 9 27 30 29 5 28 26 38</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\source\Driver\Driver_Led\Driver_Led.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 16</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 33 39 22 8 3 18 9 27 32 12 15 30 29 5 28 26 35 38</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\source\HAL\HAL_GPIO\HAL_GPIO.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 20</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 35 22 8 3 18 9 27 32 12 15 30 29 5 28 26</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\source\HAL\HAL_CLOCK\HAL_CLOCK.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 17</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 39 22 8 3 18 9 27 12 15 30 29 5 28 26</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\source\HAL\HAL_PORT\HAL_PORT.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 0</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 32 22 8 3 18 9 27 12 15 30 29 5 28 26</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\source\App\Application.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 7</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 33 39 22 8 3 18 9 27 32 12 15 30 29 5 28 26 35 42 38</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\MKE16Z4\startup_MKE16Z4.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 2</file>
+                </tool>
+            </outputs>
+        </file>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\MKE16Z4\system_MKE16Z4.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\source\HAL\HAL_LPIT\HAL_LPIT.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\source\Driver\Driver_lpit\Driver_LPIT.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\source\Driver\Driver_Led\Driver_Led.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\source\HAL\HAL_GPIO\HAL_GPIO.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\source\HAL\HAL_CLOCK\HAL_CLOCK.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\source\HAL\HAL_PORT\HAL_PORT.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\source\App\Application.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>[REBUILD_ALL]</name>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>

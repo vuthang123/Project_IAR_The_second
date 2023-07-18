@@ -1,0 +1,25 @@
+# ninja log v5
+15	48	7061948330457143	C:/Users/THANG/Desktop/project_IAR/Assignment_5/project/Debug/Obj/startup/startup_MKE16Z4.o	c18ad7b55efe4a79
+281	354	7062148626061014	C:/Users/THANG/Desktop/project_IAR/Assignment_5/project/Debug/Exe/uart.srec	2c355f335f8bab9f
+3	119	7062039080169335	C:/Users/THANG/Desktop/project_IAR/Assignment_5/project/Debug/Obj/source/APP/Application.o	c3158bf77c47a3f2
+141	293	7061948332873285	C:/Users/THANG/Desktop/project_IAR/Assignment_5/project/Debug/Obj/startup/system_MKE16Z4.o	e57f579ec4d84edd
+15	137	7061977185280541	C:/Users/THANG/Desktop/project_IAR/Assignment_5/project/Debug/Obj/source/MIDDLEWARE/MIDDLE_SREC/Middleware_SREC.o	1e5b5dc2418aef78
+188	277	7062148625191113	C:/Users/THANG/Desktop/project_IAR/Assignment_5/project/Debug/Exe/uart.out	72715c045498c2bd
+20	408	7061965664827995	C:/Users/THANG/Desktop/project_IAR/Assignment_5/project/Debug/Obj/source/HAL/HAL_PORT/HAL_PORT.o	c71886099448f990
+26	421	7061965664979107	C:/Users/THANG/Desktop/project_IAR/Assignment_5/project/Debug/Obj/source/MIDDLEWARE/MIDDLE_QUEUE/Middleware_QUEUE.o	edb8a35b5c6aefa5
+16	285	7058590150794082	C:/Users/THANG/Desktop/project_IAR/Assignment_5/project/Debug/Obj/source/DRIVER/DRIVER_LED/Driver_Led.o	545472b6f37bd47b
+18	352	7061962133646883	C:/Users/THANG/Desktop/project_IAR/Assignment_5/project/Debug/Obj/source/HAL/HAL_CLOCK/HAL_CLOCK.o	a5e0854f8e9c0615
+15	347	7061965664247549	C:/Users/THANG/Desktop/project_IAR/Assignment_5/project/Debug/Obj/source/HAL/HAL_GPIO/HAL_GPIO.o	7ee7d9fa36e31ea
+29	364	7058590151624738	C:/Users/THANG/Desktop/project_IAR/Assignment_5/project/Debug/Obj/source/DRIVER/DRIVER_BUTTON/Driver_Button.o	e478798b32bdcc67
+3	157	7062040999092402	C:/Users/THANG/Desktop/project_IAR/Assignment_5/project/Debug/Obj/source/HAL/HAL_UART/HAL_UART.o	7036c604fecef5b4
+3	185	7062148624248420	C:/Users/THANG/Desktop/project_IAR/Assignment_5/project/Debug/Obj/source/DRIVER/DRIVER_UART/Driver_UART.o	5c8a6a13f83d74c2
+2	293	7062150267936471	C:/Users/THANG/Desktop/project_IAR/Assignment_5/project/Debug/Obj/source/APP/Application.o	c3158bf77c47a3f2
+295	350	7062150268549304	C:/Users/THANG/Desktop/project_IAR/Assignment_5/project/Debug/Exe/uart.out	72715c045498c2bd
+353	364	7062150268755932	C:/Users/THANG/Desktop/project_IAR/Assignment_5/project/Debug/Exe/uart.srec	2c355f335f8bab9f
+4	169	7062150352960035	C:/Users/THANG/Desktop/project_IAR/Assignment_5/project/Debug/Obj/source/APP/Application.o	c3158bf77c47a3f2
+170	220	7062150353486889	C:/Users/THANG/Desktop/project_IAR/Assignment_5/project/Debug/Exe/uart.out	72715c045498c2bd
+222	232	7062150353680965	C:/Users/THANG/Desktop/project_IAR/Assignment_5/project/Debug/Exe/uart.srec	2c355f335f8bab9f
+11	134	7062152501130409	C:/Users/THANG/Desktop/project_IAR/Assignment_5/project/Debug/Obj/source/MIDDLEWARE/MIDDLE_QUEUE/Middleware_QUEUE.o	edb8a35b5c6aefa5
+5	191	7062152501734244	C:/Users/THANG/Desktop/project_IAR/Assignment_5/project/Debug/Obj/source/APP/Application.o	c3158bf77c47a3f2
+194	261	7062152502410223	C:/Users/THANG/Desktop/project_IAR/Assignment_5/project/Debug/Exe/uart.out	72715c045498c2bd
+269	287	7062152502754805	C:/Users/THANG/Desktop/project_IAR/Assignment_5/project/Debug/Exe/uart.srec	2c355f335f8bab9f

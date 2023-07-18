@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspace>
+    <project>
+        <path>$WS_DIR$\ass4.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\..\..\Assignment_5\project\uart.ewp</path>
+    </project>
+    <batchBuild />
+</workspace>

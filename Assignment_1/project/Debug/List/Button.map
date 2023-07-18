@@ -1,0 +1,258 @@
+###############################################################################
+#
+# IAR ELF Linker V9.32.2.340/W64 for ARM                  19/May/2023  12:06:48
+# Copyright 2007-2023 IAR Systems AB.
+#
+#    Output file  =
+#        C:\Users\THANG\Desktop\project_IAR\Assignment_1\project\Debug\Exe\Button.out
+#    Map file     =
+#        C:\Users\THANG\Desktop\project_IAR\Assignment_1\project\Debug\List\Button.map
+#    Command line =
+#        -f
+#        C:\Users\THANG\Desktop\project_IAR\Assignment_1\project\Debug\Exe\Button.out.rsp
+#        (C:\Users\THANG\Desktop\project_IAR\Assignment_1\project\Debug\Obj\Source\Button.o
+#        C:\Users\THANG\Desktop\project_IAR\Assignment_1\project\Debug\Obj\Source\Driver\Driver.o
+#        C:\Users\THANG\Desktop\project_IAR\Assignment_1\project\Debug\Obj\Startup\startup_MKE16Z4.o
+#        C:\Users\THANG\Desktop\project_IAR\Assignment_1\project\Debug\Obj\Startup\system_MKE16Z4.o
+#        --no_out_extension -o
+#        C:\Users\THANG\Desktop\project_IAR\Assignment_1\project\Debug\Exe\Button.out
+#        --map
+#        C:\Users\THANG\Desktop\project_IAR\Assignment_1\project\Debug\List\Button.map
+#        --config "C:\Program Files\IAR Systems\Embedded Workbench
+#        9.1\arm/config/linker/NXP/MKE16Z64xxx4.icf" --semihosting --entry
+#        __iar_program_start --vfe --text_out locale --cpu=Cortex-M0+
+#        --fpu=None)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__CPP_Runtime   = 1
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because --advanced_heap
+was not specified and the application did not appear to
+be primarily optimized for speed.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x0 { ro section .intvec };
+"P1":  place in [from 0x0 to 0x3ff] |
+                [from 0x410 to 0xffff] { ro };
+define block CSTACK with size = 512, alignment = 8 { };
+define block PROC_STACK with size = 0, alignment = 8 { };
+define block HEAP with size = 2K, alignment = 8 { };
+"P2":  place in [from 0x1fff'f800 to 0x1fff'ffff] |
+                [from 0x2000'0000 to 0x2000'17ff] {
+          rw, block CSTACK, block PROC_STACK, block HEAP };
+"P3":  place in [from 0x400 to 0x40f] { section FlashConfig };
+
+No sections matched the following patterns:
+
+  rw  in "P2"
+
+
+  Section      Kind         Address   Size  Object
+  -------      ----         -------   ----  ------
+"A0":                                 0xc0
+  .intvec      ro code          0x0   0xc0  startup_MKE16Z4.o [3]
+                             - 0xc0   0xc0
+
+"P1":                                0x1c4
+  .text        ro code         0xc0   0x9c  Button.o [1]
+  .text        ro code        0x15c   0x50  system_MKE16Z4.o [3]
+  .text        ro code        0x1ac    0x2  system_MKE16Z4.o [3]
+  .text        ro code        0x1ae    0x2  startup_MKE16Z4.o [3]
+  .text        ro code        0x1b0   0x28  startup_MKE16Z4.o [3]
+  .text        ro code        0x1d8   0x1e  cmain.o [5]
+  .text        ro code        0x1f6    0x4  low_level_init.o [4]
+  .text        ro code        0x1fa    0x8  exit.o [4]
+  .text        ro code        0x202    0x2  startup_MKE16Z4.o [3]
+  .text        ro code        0x204    0xa  cexit.o [5]
+  .text        ro code        0x20e    0x2  startup_MKE16Z4.o [3]
+  .text        ro code        0x210   0x14  exit.o [6]
+  .text        ro code        0x224   0x1c  cstartup_M.o [5]
+  .text        ro code        0x240    0x8  startup_MKE16Z4.o [3]
+  .text        ro code        0x248    0x8  startup_MKE16Z4.o [3]
+  .text        ro code        0x250    0x8  startup_MKE16Z4.o [3]
+  .text        ro code        0x258    0x8  startup_MKE16Z4.o [3]
+  .text        ro code        0x260    0x8  startup_MKE16Z4.o [3]
+  .text        ro code        0x268    0x8  startup_MKE16Z4.o [3]
+  .text        ro code        0x270    0x8  startup_MKE16Z4.o [3]
+  .text        ro code        0x278    0x8  startup_MKE16Z4.o [3]
+  .text        ro code        0x280    0x2  startup_MKE16Z4.o [3]
+  .text        ro code        0x282    0x2  startup_MKE16Z4.o [3]
+                            - 0x284  0x1c4
+
+"P3":                                 0x10
+  FlashConfig  ro code        0x400   0x10  startup_MKE16Z4.o [3]
+                            - 0x410   0x10
+
+"P2":                                0x200
+  CSTACK                0x1fff'f800  0x200  <Block>
+    CSTACK     uninit   0x1fff'f800  0x200  <Block tail>
+                      - 0x1fff'fa00  0x200
+
+Unused ranges:
+
+         From           To    Size
+         ----           --    ----
+        0x284        0x3ff   0x17c
+        0x410       0xffff  0xfbf0
+  0x1fff'fa00  0x1fff'ffff   0x600
+  0x2000'0000  0x2000'17ff  0x1800
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module             ro code  rw data
+    ------             -------  -------
+command line/config:
+    -----------------------------------
+    Total:
+
+C:\Users\THANG\Desktop\project_IAR\Assignment_1\project\Debug\Obj\Source: [1]
+    Button.o               156
+    -----------------------------------
+    Total:                 156
+
+C:\Users\THANG\Desktop\project_IAR\Assignment_1\project\Debug\Obj\Source\Driver: [2]
+    -----------------------------------
+    Total:
+
+C:\Users\THANG\Desktop\project_IAR\Assignment_1\project\Debug\Obj\Startup: [3]
+    startup_MKE16Z4.o      322
+    system_MKE16Z4.o        82
+    -----------------------------------
+    Total:                 404
+
+dl6M_tln.a: [4]
+    exit.o                   8
+    low_level_init.o         4
+    -----------------------------------
+    Total:                  12
+
+rt6M_tl.a: [5]
+    cexit.o                 10
+    cmain.o                 30
+    cstartup_M.o            28
+    -----------------------------------
+    Total:                  68
+
+shb_l.a: [6]
+    exit.o                  20
+    -----------------------------------
+    Total:                  20
+
+    Linker created                  512
+---------------------------------------
+    Grand Total:           660      512
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address  Size  Type      Object
+-----                       -------  ----  ----      ------
+?main                         0x1d9        Code  Gb  cmain.o [5]
+ADC0_IRQHandler               0x279        Code  Wk  startup_MKE16Z4.o [3]
+CMP0_IRQHandler               0x279        Code  Wk  startup_MKE16Z4.o [3]
+CSTACK$$Base            0x1fff'f800         --   Gb  - Linker created -
+CSTACK$$Limit           0x1fff'fa00         --   Gb  - Linker created -
+DefaultISR                    0x279        Code  Wk  startup_MKE16Z4.o [3]
+FTFA_IRQHandler               0x279        Code  Wk  startup_MKE16Z4.o [3]
+FTM0_IRQHandler               0x279        Code  Wk  startup_MKE16Z4.o [3]
+FTM1_IRQHandler               0x279        Code  Wk  startup_MKE16Z4.o [3]
+HardFault_Handler             0x203        Code  Wk  startup_MKE16Z4.o [3]
+LPI2C0_DriverIRQHandler
+                              0x279        Code  Wk  startup_MKE16Z4.o [3]
+LPI2C0_IRQHandler             0x241        Code  Wk  startup_MKE16Z4.o [3]
+LPIT0_IRQHandler              0x279        Code  Wk  startup_MKE16Z4.o [3]
+LPSPI0_DriverIRQHandler
+                              0x279        Code  Wk  startup_MKE16Z4.o [3]
+LPSPI0_IRQHandler             0x249        Code  Wk  startup_MKE16Z4.o [3]
+LPUART0_DriverIRQHandler
+                              0x279        Code  Wk  startup_MKE16Z4.o [3]
+LPUART0_IRQHandler            0x251        Code  Wk  startup_MKE16Z4.o [3]
+LPUART1_DriverIRQHandler
+                              0x279        Code  Wk  startup_MKE16Z4.o [3]
+LPUART1_IRQHandler            0x259        Code  Wk  startup_MKE16Z4.o [3]
+LPUART2_DriverIRQHandler
+                              0x279        Code  Wk  startup_MKE16Z4.o [3]
+LPUART2_IRQHandler            0x261        Code  Wk  startup_MKE16Z4.o [3]
+LVD_LVW_IRQHandler            0x279        Code  Wk  startup_MKE16Z4.o [3]
+MSCAN_DriverIRQHandler        0x279        Code  Wk  startup_MKE16Z4.o [3]
+MSCAN_ORed_IRQHandler         0x271        Code  Wk  startup_MKE16Z4.o [3]
+MSCAN_Rx_IRQHandler           0x269        Code  Wk  startup_MKE16Z4.o [3]
+NMI_Handler                   0x1af        Code  Wk  startup_MKE16Z4.o [3]
+PDB0_IRQHandler               0x279        Code  Wk  startup_MKE16Z4.o [3]
+PORTAE_IRQHandler             0x279        Code  Wk  startup_MKE16Z4.o [3]
+PORTBCD_IRQHandler            0x279        Code  Wk  startup_MKE16Z4.o [3]
+PWT_LPTMR0_IRQHandler         0x279        Code  Wk  startup_MKE16Z4.o [3]
+PendSV_Handler                0x281        Code  Wk  startup_MKE16Z4.o [3]
+RTC_IRQHandler                0x279        Code  Wk  startup_MKE16Z4.o [3]
+Region$$Table$$Base             0x0         --   Gb  - Linker created -
+Region$$Table$$Limit            0x0         --   Gb  - Linker created -
+Reserved16_IRQHandler         0x279        Code  Wk  startup_MKE16Z4.o [3]
+Reserved17_IRQHandler         0x279        Code  Wk  startup_MKE16Z4.o [3]
+Reserved18_IRQHandler         0x279        Code  Wk  startup_MKE16Z4.o [3]
+Reserved19_IRQHandler         0x279        Code  Wk  startup_MKE16Z4.o [3]
+Reserved20_IRQHandler         0x279        Code  Wk  startup_MKE16Z4.o [3]
+Reserved25_IRQHandler         0x279        Code  Wk  startup_MKE16Z4.o [3]
+Reserved27_IRQHandler         0x279        Code  Wk  startup_MKE16Z4.o [3]
+Reserved35_IRQHandler         0x279        Code  Wk  startup_MKE16Z4.o [3]
+Reserved37_IRQHandler         0x279        Code  Wk  startup_MKE16Z4.o [3]
+Reserved39_IRQHandler         0x279        Code  Wk  startup_MKE16Z4.o [3]
+Reset_Handler                 0x1b1        Code  Wk  startup_MKE16Z4.o [3]
+SCG_RCM_IRQHandler            0x279        Code  Wk  startup_MKE16Z4.o [3]
+SVC_Handler                   0x20f        Code  Wk  startup_MKE16Z4.o [3]
+SysTick_Handler               0x283        Code  Wk  startup_MKE16Z4.o [3]
+SystemInit                    0x15d  0x34  Code  Gb  system_MKE16Z4.o [3]
+SystemInitHook                0x1ad   0x2  Code  Wk  system_MKE16Z4.o [3]
+TSI_IRQHandler                0x279        Code  Wk  startup_MKE16Z4.o [3]
+WDOG_EWM_IRQHandler           0x279        Code  Wk  startup_MKE16Z4.o [3]
+__Vectors                       0x0         --   Gb  startup_MKE16Z4.o [3]
+__Vectors_End                  0xc0        Data  Gb  startup_MKE16Z4.o [3]
+__Vectors_Size {Abs}           0xc0         --   Gb  startup_MKE16Z4.o [3]
+__cmain                       0x1d9        Code  Gb  cmain.o [5]
+__exit                        0x211  0x14  Code  Gb  exit.o [6]
+__iar_program_start           0x225        Code  Gb  cstartup_M.o [5]
+__low_level_init              0x1f7   0x4  Code  Gb  low_level_init.o [4]
+__vector_table                  0x0        Data  Gb  startup_MKE16Z4.o [3]
+__vector_table_0x1c            0x1c        Data  Gb  startup_MKE16Z4.o [3]
+_call_main                    0x1e5        Code  Gb  cmain.o [5]
+_exit                         0x205        Code  Gb  cexit.o [5]
+delay                         0x107  0x30  Code  Gb  Button.o [1]
+exit                          0x1fb   0x8  Code  Gb  exit.o [4]
+initLed                        0xdb  0x2c  Code  Gb  Button.o [1]
+main                           0xc1  0x1a  Code  Gb  Button.o [1]
+
+
+[1] = C:\Users\THANG\Desktop\project_IAR\Assignment_1\project\Debug\Obj\Source
+[2] = C:\Users\THANG\Desktop\project_IAR\Assignment_1\project\Debug\Obj\Source\Driver
+[3] = C:\Users\THANG\Desktop\project_IAR\Assignment_1\project\Debug\Obj\Startup
+[4] = dl6M_tln.a
+[5] = rt6M_tl.a
+[6] = shb_l.a
+
+  660 bytes of readonly  code memory
+  512 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
